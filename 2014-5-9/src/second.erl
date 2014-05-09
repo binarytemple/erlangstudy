@@ -13,4 +13,7 @@
 -export([start/0]).
 
 start() ->
-  io:fwrite("Hello world ~s !", [  first:foo("foo")  ]).
+  io:fwrite("Hello world ~p !", [
+
+     first:foo("foo")
+  ]).
