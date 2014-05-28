@@ -15,7 +15,6 @@ Experiments with list matching, comprehensions and case statements
     9> lists:nth(2,[1,2,3]).
     2
     10> lists:nth(3,[1,2,3]).
-    
     11> help().
     ** shell internal commands **
     b()        -- display all variable bindings
