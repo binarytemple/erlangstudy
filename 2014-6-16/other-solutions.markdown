@@ -1,5 +1,7 @@
 ### Ciprian's solution 
 
+Classic functional programming solution. Just uses recursion and guards.
+
 ```
 -module(fizzbuzz).
 -export([tell/3, fb/1]).
