@@ -40,6 +40,7 @@ number(N) -> N.
 
 This is from the net, it creates an tuple which can be very nicely matched upon.
 
+```
 fizz_or_buzz(X) ->
   case {X rem 3, X rem 5} of
     {0, 0} -> fizzbuzz;
@@ -47,9 +48,11 @@ fizz_or_buzz(X) ->
     {_, 0} -> buzz;
     {_, _} -> X
   end.
-  
+```  
+
 ### Bryan's pattern matching solution 
 
+```
 Fi = fun(X) -> if ( X rem 15 =:= 0 ) -> "fizbuzz\n";
                 X rem 3 =:= 0 -> "fizz\n" ;
                 X rem 5 =:= 0 -> "buzz\n";
@@ -58,4 +61,4 @@ Fi = fun(X) -> if ( X rem 15 =:= 0 ) -> "fizbuzz\n";
             end,
         Res = lists:map( Fi , lists:seq(1,100) ),
         io:format("results ~s" , [Res])
-
+```
