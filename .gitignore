@@ -1,3 +1,7 @@
 *.dump
 *.beam
 out
+.idea
+deps
+.DS_Store
+.rebar
