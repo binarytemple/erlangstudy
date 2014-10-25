@@ -1,6 +1,14 @@
 
 Interesting paper, [Programming Efficiently with Binaries and Bit Strings](http://www.erlang.org/euc/07/papers/1700Gustafsson.pdf)
 
+[Good reference guide](http://www.erlang.org/doc/programming_examples/bit_syntax.html)
+
+[Erlang internals, data type memory usage](http://www.erlang.org/doc/efficiency_guide/advanced.html)
+
+[Don't get confused by the binary to integer stuff](http://erlang.org/doc/man/erlang.html#binary_to_integer-1)
+
+[Also pulled down the source code from the book -  Erlang Programming by Francesco Cesarini and Simon Thompson ]( https://github.com/binarytemple/erlang_programming) 
+
 ```
 101> h().
 81: bitstring_to_list(D)
