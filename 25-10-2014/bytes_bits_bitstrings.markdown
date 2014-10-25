@@ -1,4 +1,6 @@
 
+Interesting paper, [Programming Efficiently with Binaries and Bit Strings](http://www.erlang.org/euc/07/papers/1700Gustafsson.pdf)
+
 ```
 101> h().
 81: bitstring_to_list(D)
@@ -84,4 +86,38 @@ ok
 
 ```
 
+Moar experiments 
 
+```
+113> X = list_to_bitstring([0,1,0]).
+<<0,1,0>>
+114> X.
+<<0,1,0>>
+115>
+115> <<A:_/integer>>.
+* 2: variable 'A' is unbound
+116> <<X:_/integer>>.
+* 1: variable '_' is unbound
+117> <<X:/integer>>.
+* 1: syntax error before: '/'
+117> <<X:64/integer>>.
+** exception error: bad argument
+118> <<X:24/integer>>.
+** exception error: bad argument
+119> <<X:15/integer>>.
+** exception error: bad argument
+120> <<A:16/integer>> =  X.
+** exception error: no match of right hand side value <<0,1,0>>
+121> <<A:24/integer>> =  X.
+<<0,1,0>>
+122> <<A:_/integer>> =  X.
+* 1: variable '_' is unbound
+123> <<A:X/integer>> =  X.
+** exception error: no match of right hand side value <<0,1,0>>
+124> <<A:24/integer>> =  X.
+<<0,1,0>>
+125> A.
+256
+126>
+
+```
